@@ -12,12 +12,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-main {
-    background-color: #333333;
-}
-
 main * {
-    line-height: 75px;
     text-align: center;
 }
 
@@ -30,11 +25,21 @@ main * {
 }
 
 .left-col {
+    background-color: #444444;
     width: 40%;
     padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
 }
 
 .right-col {
+    background-color: #333333;
     width: 60%;
     padding: 60px;
+}
+
+.close {
+    float: right;
 }
