@@ -13,12 +13,24 @@
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script>
+        function switchoff()
+        {
+            console.log("it works");
+            document.getElementById("meme").style.display = 'inline-block';
+            document.getElementById("meme").style.position = 'absolute';
+            document.getElementById("meme").style.left = '50%';
+            document.getElementById("not-a-meme").style.display = 'none';
+            document.getElementById("also-not-a-meme").style.display = 'none';
+        }
+    </script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <div class="bg"></div>
     <main class="container">
-        <!--Lol, why did you do that?-->
-        <div class="left-col">
+        <p id="meme">Lol, why did you do that?</p>
+        <div class="left-col" id="not-a-meme">
             <h1>Sign up</h1>
             <footer>
                 <a href="#">Privacy policy</a>
@@ -26,27 +38,29 @@
                 <a href="#">terms of service</a>
             </footer>
         </div>
-        <div class="right-col">
-            <button class="close">X</button>
+        <div class="right-col" id="also-not-a-meme">
+            <button class="close" onclick="switchoff()">X</button>
             <form>
                 <div class="field-container">
-                    <label for="uname">Username:</label><br>
-                    <input type="text" id="uname" name="uname" required><br>
+                    <label for="uname" class="label">Username:</label><br>
+                    <input type="text" class="field" id="uname" name="uname" required><br>
                 </div>
                 <div class="field-container">
-                    <label for="mail">E-mail:</label><br>
-                    <input type="email" id="mail" name="mail" required><br>
+                    <label for="mail" class="label">E-mail:</label><br>
+                    <input type="email" class="field" id="mail" name="mail" required><br>
                 </div>
                 <div class="field-container">
-                    <label for="pass">Password:</label><br>
-                    <input type="password" id="pass" name="pass" required><br>
+                    <label for="pass" class="label">Password:</label><br>
+                    <input type="password" class="field" id="pass" name="pass" required><br>
                 </div>
                 <div class="field-container">
-                    <label for="repass">Repeat password:</label><br>
-                    <input type="password" id="repass" name="repass" required><br>
+                    <label for="repass" class="label">Repeat password:</label><br>
+                    <input type="password" class="field" id="repass" name="repass" required><br>
                 </div>
-                <div class="field-container">
-                    <input type="submit" value="Sign up">
+                <div class="field-container mainButtons">
+                    <input type="submit" value="Sign up" class="mainButton"> 
+                    <p>or</p>
+                    <a href="#" class="sideButton">Sign in</a>
                 </div>
             </form>
         </div>
