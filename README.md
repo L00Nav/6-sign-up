@@ -18,4 +18,4 @@ Sourcing:
 
 An educational project for CSS practice.
 
-All assets, excluding any placeholders off Google, were produced by me.
+All assets, excluding any placeholders off Google (not present in the final build), were produced by me.
