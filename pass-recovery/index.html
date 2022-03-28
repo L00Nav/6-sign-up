@@ -24,7 +24,7 @@
             document.getElementById("also-not-a-meme").style.display = 'none';
         }
     </script>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <div class="bg"></div>
@@ -42,20 +42,12 @@
             <button class="close" onclick="switchoff()">X</button>
             <form>
                 <div class="field-container">
-                    <label for="uname" class="label">Username:</label><br>
-                    <input type="text" class="field" id="uname" name="uname" required><br>
-                </div>
-                <div class="field-container">
-                    <label for="pass" class="label">Password:</label><br>
-                    <input type="password" class="field" id="pass" name="pass" required><br>
-                </div>
-                <div class="field-container">
-                    <a href="./recovery.html">Forgot password?</a>
+                    <label for="mail" class="label">E-mail:</label><br>
+                    <input type="email" class="field" id="mail" name="mail" required><br>
                 </div>
                 <div class="field-container mainButtons">
-                    <input type="submit" value="Sign in" class="mainButton"> 
-                    <p>or</p>
-                    <a href="./index.html" class="sideButton">Sign up</a>
+                    <input type="submit" value="Reset" class="mainButton">
+                    <a href="../sign-in" class="sideButton">Back</a>
                 </div>
             </form>
         </div>
